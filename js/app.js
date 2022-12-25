@@ -1,6 +1,4 @@
-let list = document.querySelector(".list");
-let options = document.querySelector(".options");
-let design = document.querySelectorAll(".name");
+
 const resNav = document.getElementById("nav-responsive");
 const modal = document.getElementById("modal");
 const html = document.getElementsByTagName("body");
@@ -42,24 +40,3 @@ loginBtnClose.addEventListener("click", () => {
   modal.close();
   blurEl.style.display = "none";
 });
-
-list.innerHTML = `
-compact`;
-options.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  if (e.target.className == "compact") {
-    list.innerHTML = `
-    compact
-    `(document.querySelector(e.target.className)).classList.add("active");
-  } else if (e.target.className == "sport") {
-    list.innerHTML = `
-    sport
-    `;
-  } else if (e.target.className == "van") {
-    list.innerHTML = `
-    vans
-    `;
-  } else {
-    console.log("xato");
-  }

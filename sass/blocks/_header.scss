@@ -1,4 +1,3 @@
-
 .cards {
   margin-top: 133px;
   margin-bottom: 160px;
@@ -108,7 +107,7 @@
   text-align: left;
 }
 .tor > p {
-  margin-left: 5px
+  margin-left: 5px;
 }
 
 .list-item > img {
@@ -137,7 +136,7 @@
   display: block;
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 780px) {
   .list-item > img {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -170,7 +169,7 @@
     padding: 0;
   }
 
-  .obshiy > .tor:last-child > p{
+  .obshiy > .tor:last-child > p {
     font-size: 15px;
   }
 
@@ -186,4 +185,4 @@
     font-size: 12px;
     line-height: 15px;
   }
-
+}
