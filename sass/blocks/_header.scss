@@ -3,6 +3,77 @@
   margin-bottom: 160px;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swipe {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  z-index: 8;
+  transform: rotate(90deg);
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.swiper-slide {
+  width: 50%;
+  border-radius: 40px;
+}
+.swiper-slide:first-child {
+  width: 50%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 50%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 50%;
+}
+
 .cards-title {
   font-family: "Montserrat";
   font-style: normal;
@@ -134,6 +205,156 @@
 
 .btn-compact:hover {
   display: block;
+}
+
+.comunity {
+  padding: 100px 0px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.community-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.community-start {
+  width: 470px;
+}
+
+.community-end {
+  width: 750px;
+  height: 550px;
+}
+
+.community-start > div > div > a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.community-start > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.community-title {
+  width: 320px;
+  margin-top: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+  .community-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .community-start {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .community-start {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .community-start > hr {
+    width: 200px
+  };
+  .community-title {
+    width: 300px;
+    margin-top: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  .community-start {
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.community-start > hr {
+  width: 330px;
+  height: 3px;
+  opacity: 1;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #ea4335 19.83%,
+    #fbbc05 65%,
+    #34a853 82.29%,
+    #4285f4 100%
+  );
+}
+
+.community-start > div > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  color: #555555;
+}
+
+.community-end {
+  background-color: #299764;
+}
+
+.insta-btn {
+  background: radial-gradient(
+    230.93% 230.93% at 102.01% 2.03%,
+    #f9ed32 0%,
+    #ee2a7b 36%,
+    #d22a8a 44%,
+    #8b2ab2 60%,
+    #1b2af0 83%,
+    #002aff 88%
+  );
+  width: 194px;
+  height: 58px;
+  padding: 4px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.insta-btn > button {
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  height: 100%;
+}
+
+.insta-btn > button > p {
+  background: -webkit-linear-gradient(
+    #ee2a7b 36%,
+    #f9ed32 0%,
+    #d22a8a 44%,
+    #8b2ab2 60%,
+    #1b2af0 83%,
+    #002aff 88%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 780px) {
