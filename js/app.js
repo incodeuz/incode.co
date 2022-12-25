@@ -18,6 +18,7 @@ darkmode.addEventListener("click", () => {
 openBtn.addEventListener("click", () => {
   blurEl.style.display = "block";
   resNav.style.transform = "translateX(0)";
+  body.style.overflowY = 'hidden' 
 });
 
 blurEl.addEventListener("click", () => {
