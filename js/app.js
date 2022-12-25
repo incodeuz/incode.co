@@ -1,13 +1,19 @@
-
 const resNav = document.getElementById("nav-responsive");
 const modal = document.getElementById("modal");
-const html = document.getElementsByTagName("body");
+const [body] = document.getElementsByTagName("body");
 const closeBtn = document.getElementById("close-btn");
 const openBtn = document.querySelector(".burger");
 const blurEl = document.querySelector(".blur");
 const loginBtn = document.querySelector(".btn-login");
 const loginBtnClose = document.querySelector(".btn-login-close");
 const navLogin = document.getElementById("nav-login");
+const darkmode = document.querySelector(".dark-light-img");
+
+const allElements = Array.from(document.getElementsByTagName("*"));
+
+darkmode.addEventListener("click", () => {
+  allElements.forEach((item) => item.classList.toggle("dark"));
+});
 
 openBtn.addEventListener("click", () => {
   blurEl.style.display = "block";
