@@ -1,24 +1,34 @@
 {
+  "explorer.confirmDelete": false,
+  "editor.formatOnPaste": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "tabnine.experimentalAutoImports": true,
+  "json.schemas": [],
+  "liveServer.settings.donotShowInfoMsg": true,
+
   "liveSassCompile.settings.formats": [
-      {
-          "format": "expanded",
-          "extensionName": ".css",
-          "savePath": "./public/css"
-      },
-      {
-          "extensionName": ".min.css",
-          "format": "compressed",
-          "savePath": "./public/css"
-      }
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "extensionName": ".min.css",
+      "format": "compressed",
+      "savePath": "/css"
+    }
   ],
-  "liveSassCompile.settings.excludeList": [
-      "**/node_modules/**",
-      ".vscode/**"
-  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": false,
   //autoprefix, will auto add perfix like -webkit- -moz-..
-  "liveSassCompile.settings.autoprefix": [
-      "> 1%",
-      "last 2 versions"
-  ]
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "workbench.editor.enablePreview": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "liveSassCompile.settings.includeItems": [],
+  "editor.fontSize": 17,
+  "editor.language.brackets": []
 }
