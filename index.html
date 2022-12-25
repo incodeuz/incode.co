@@ -7,6 +7,10 @@
     <title>Car Rental</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Abdulloh start -->
@@ -1686,8 +1690,63 @@
         </div>
         <button class="btn-compact">View all cars</button>
       </section>
+      <!-- COMMUNITY SECTION START  -->
+      <section class="comunity">
+        <div class="container">
+          <div class="community-wrapper">
+            <div class="community-start">
+              <div>
+                <div>
+                  <img src="./images/Google.png" alt="" /><a href=""
+                    >From Google</a
+                  >
+                </div>
+                <h2 class="community-title">
+                  Hear what the community is saying
+                </h2>
+              </div>
+              <hr />
+              <div>
+                <p>More interesting reviews on Instagram</p>
+                <div class="insta-btn">
+                  <button><p>Instagram</p></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/bacha.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/bacha.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/bacha.png" alt="" />
+                </div>
+              </div>
+              <div class="swipe"><div class="swiper-pagination"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- COMMUNITY SECTION END  -->
     </main>
     <!-- Abdulloh end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="./js/app.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
   </body>
