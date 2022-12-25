@@ -18,7 +18,7 @@ darkmode.addEventListener("click", () => {
 openBtn.addEventListener("click", () => {
   blurEl.style.display = "block";
   resNav.style.transform = "translateX(0)";
-  body.style.overflowY = 'hidden' 
+  body.style.overflowY = 'hidden'; 
 });
 
 blurEl.addEventListener("click", () => {
@@ -29,6 +29,7 @@ blurEl.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   resNav.style.transform = "translateX(500px)";
   blurEl.style.display = "none";
+  body.style.overflowY = "scroll"; 
 });
 
 loginBtn.addEventListener("click", () => {
