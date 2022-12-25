@@ -75,9 +75,9 @@
                 <li class="drop-item">
                   <div class="drop">
                     <div class="drop-child">
-                      <p>News</p>
-                      <p>Career</p>
-                      <p>Locations</p>
+                      <p class="drop-child-item">News</p>
+                      <p class="drop-child-item">Career</p>
+                      <p class="drop-child-item">Locations</p>
                     </div>
                   </div>
                   <p>About Us</p>
@@ -228,6 +228,44 @@
               />
             </svg>
           </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="divv">
+          <div class="input-box">
+            <input type="text" placeholder="Find the car of your dreams" />
+            <div class="search-box">
+              <img src="./images/search.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/moshina1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/moshina2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/moshina3.png" alt="" />
+              </div>
+            </div>
+            <div class="pag">
+              <div class="swiper-button-prev">
+                <img
+                  style="transform: rotate(180deg)"
+                  src="./images/prev.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-button-next">
+                <img src="./images/prev.svg" alt="" />
+              </div>
+            </div>
+            <div class="paginat">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1749,5 +1787,24 @@
     </script>
     <script src="./js/app.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
